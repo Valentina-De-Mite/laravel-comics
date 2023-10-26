@@ -2,17 +2,35 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
+Route::get('/comics', function () {
+
+   
+
+    $comics_collection=collect(config('comics_list.comics_list'));
+    $data= [
+        'comics_list'=>$comics_collection
+    
+    ];
+
+    return view('comics', $data);
+
+
+
+
+})->name('comics');
+
 
 Route::get('/', function () {
-    return view('comics');
-});
+
+    
+
+
+
+
+    return view('welcome');
+
+
+
+
+})->name('welcome');
