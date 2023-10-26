@@ -47,3 +47,34 @@
     top: -25px;
     left: 25px;
 }
+
+.banner {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.DC {
+    background-repeat: no-repeat;
+}
+.f-s {
+    font-size: 15px;
+}
+
+.dark {
+    background-color: #303030;
+}
+
+a {
+    color: white !important;
+}
+.link:hover,
+.tb:hover {
+    text-decoration: underline !important;
+}
+
+.icon {
+    opacity: 0.5;
+}
+.icon:hover {
+    opacity: 1;
+}
